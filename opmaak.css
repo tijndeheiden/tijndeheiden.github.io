@@ -23,3 +23,15 @@ li a {
 li a:hover {
   background-color: #00a651;
 }
+
+.over-mij {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.over-mij h2 {
+  color: #00a651;
+  margin-top: 0;
+}
