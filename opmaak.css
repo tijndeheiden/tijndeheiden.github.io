@@ -39,3 +39,20 @@ li a:hover {
   color: #00a651;
   margin-top: 0;
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1c1c1c;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  float: none;
+}
