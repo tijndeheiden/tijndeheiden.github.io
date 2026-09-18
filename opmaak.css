@@ -38,7 +38,8 @@ li a:hover {
   margin-top: 10px;
 }
 
-.over-mij h2 {
+.over-mij h2,
+.over-eafc h2 {
   color: #00a651;
   margin-top: 0;
 }
