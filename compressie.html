@@ -6,26 +6,40 @@
     <link rel="stylesheet" type="text/css" href="CSS/opmaak.css">
     <meta charset="utf-8">
     </head>
-    <body>
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-    <a href="binairstelsel.html">Informatica</a>
-    <ul class="dropdown-menu">
-    <li><a href="binairstelsel.html">Binair stelsel</a></li>
-    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-    <li><a href="compressie.html">Compressie</a></li>
-    <li><a href="ai.html">AI</a></li>
-    <li><a href="IVU.html">IVU</a></li>
-    </ul>
-    </li>
-    </ul>
+      <body>
+        <header class="site-header">
+            <div class="logo">Mijn Informatica</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="binairstelsel.html">Informatica</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+                        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+                        <li><a href="compressie.html">Compressie</a></li>
+                        <li><a href="ai.html">AI</a></li>
+                        <li><a href="ivu.html">IVU</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
 
-        <div class="over-mij">
-            <h2>Compressie</h2>
-            <p>Compressie betekent het kleiner maken van een bestand, zodat het minder opslagruimte inneemt. Er bestaan twee soorten afbeeldingen: bitmap en vector. Een bitmap bestaat uit een rooster van pixels, waarbij elke pixel een eigen kleur heeft, zoals bij een foto — vergroot je 'm uit, dan wordt hij korrelig. Een vector wordt niet opgeslagen als pixels, maar als wiskundige formules voor vormen en lijnen, waardoor je 'm eindeloos kunt vergroten zonder kwaliteitsverlies, ideaal voor logo's. Bij compressie is er verder verschil tussen lossless (zonder kwaliteitsverlies) en lossy (met verlies, kleiner bestand).</p>
+        <h1 class="page-title">Compressie</h1>
+
+        <div class="card">
+            <h2>Wat is compressie?</h2>
+            <p>Compressie betekent het kleiner maken van een bestand, zodat het minder opslagruimte inneemt. Bij compressie is er verschil tussen lossless (zonder kwaliteitsverlies) en lossy (met verlies, kleiner bestand).</p>
         </div>
 
-        <img src="images/comprimatie.png"img/>
+        <div class="card-row">
+            <div class="card">
+                <h2>Bitmap</h2>
+                <p>Een bitmap bestaat uit een rooster van pixels, waarbij elke pixel een eigen kleur heeft, zoals bij een foto. Vergroot je 'm uit, dan wordt hij korrelig.</p>
+            </div>
+            <div class="card">
+                <h2>Vector</h2>
+                <p>Een vector wordt niet opgeslagen als pixels, maar als wiskundige formules voor vormen en lijnen. Daardoor kun je 'm eindeloos vergroten zonder kwaliteitsverlies, ideaal voor logo's.</p>
+            </div>
+        </div>
     </body>
 </html>
