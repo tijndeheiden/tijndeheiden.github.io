@@ -7,29 +7,47 @@
         <meta charset="utf-8">
     </head>
     <body>
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li class="dropdown">
-    <a href="binairstelsel.html">Informatica</a>
-    <ul class="dropdown-menu">
-    <li><a href="binairstelsel.html">Binair stelsel</a></li>
-    <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-    <li><a href="compressie.html">Compressie</a></li>
-    <li><a href="ai.html">AI</a></li>
-    <li><a href="IVU.html">IVU</a></li>
-    </ul>
-    </li>
-    </ul>
+        <header class="site-header">
+            <div class="logo">Mijn Informatica</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="binairstelsel.html">Informatica</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+                        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+                        <li><a href="compressie.html">Compressie</a></li>
+                        <li><a href="ai.html">AI</a></li>
+                        <li><a href="ivu.html">IVU</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
 
-        <div class="over-mij">
-        <h2>Binair stelsel</h2>
-        <p>Het binaire stelsel is een telsysteem dat maar twee cijfers gebruikt: 0 en 1. Computers werken hiermee, omdat een elektronisch schakeltje maar twee standen kent: aan (1) of uit (0). Bij ons normale (decimale) telsysteem gebruiken we tien cijfers, van 0 tot en met 9, en heeft elk cijfer een plaats met een waarde van 1, 10, 100, enzovoort. Bij het binaire stelsel werkt dat net zo, maar dan met machten van 2: elke plek staat voor 1, 2, 4, 8, 16, enzovoort. Zo betekent het getal 1011 in binair: 1×8 + 0×4 + 1×2 + 1×1, wat samen 11 is in het gewone (decimale) stelsel. Elke losse 0 of 1 in een binair getal heet een bit, de kleinste eenheid van informatie in een computer. Acht bits samen vormen een byte, waarmee bijvoorbeeld één letter of teken kan worden opgeslagen. Alles wat een computer doet — tekst, afbeeldingen, geluid — wordt uiteindelijk omgezet naar reeksen van enen en nullen. Door dit om te zetten (converteren) tussen decimaal en binair kun je precies zien hoe een computer een getal "ziet".</p>
+        <h1 class="page-title">Binair stelsel</h1>
+
+        <div class="card">
+            <h2>Wat is het binaire stelsel?</h2>
+            <p>Het binaire stelsel is een telsysteem dat maar twee cijfers gebruikt: 0 en 1. Computers werken hiermee, omdat een elektronisch schakeltje maar twee standen kent: aan (1) of uit (0).</p>
         </div>
 
-        <img src="images/ed32b4092ef01c2ad65a5854e44d4690e073eac818b5194996f7c479a3ee_640.jpg"/>
-        <div class="over-mij">
-        <h2>Speel Binary Bonanza</h2>
-        <p>Oefen het binaire stelsel spelenderwijs:</p>
-        <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" ></iframe>
+        <div class="card-row">
+            <div class="card">
+                <h2>Hoe werkt het?</h2>
+                <p>Bij ons normale (decimale) stelsel gebruiken we tien cijfers, van 0 tot en met 9. Bij binair zijn er alleen 0 en 1, en werkt elke plek met machten van 2 in plaats van machten van 10.</p>
+            </div>
+            <div class="card">
+                <h2>0 en 1</h2>
+                <p>Elke losse 0 of 1 heet een bit. Acht bits samen vormen een byte, waarmee bijvoorbeeld één letter kan worden opgeslagen.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Speel Binary Bonanza</h2>
+            <p>Oefen het binaire stelsel spelenderwijs:</p>
+            <a href="https://games.penjee.com/binary-bonanza/" target="_blank">
+                <img src="binarybonanza.jpg" alt="Speel Binary Bonanza" style="max-width: 100%; border-radius: 4px;">
+            </a>
+        </div>
     </body>
 </html>
