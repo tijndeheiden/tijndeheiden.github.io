@@ -132,3 +132,26 @@ li a:hover {
   height: 100%;
   border: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.card-with-icon {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.card-with-icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: white;
+  padding: 4px;
+}
+
+.card-with-icon .text {
+  flex: 1;
+}
