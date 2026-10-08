@@ -1,12 +1,14 @@
 
-<!DOCTYPE html> <!--dit is de compressie pagina van mijn site-->
-<html> <!--dit is het html-element-->
+<!DOCTYPE html> <!-- Geeft aan dat dit een HTML5-document is -->
+<html lang="nl"> <!-- Begin van de pagina; de taal is Nederlands -->
     <head>
-    <title>Compressie</title>
-    <link rel="stylesheet" type="text/css" href="CSS/opmaak.css">
-    <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- Zorgt dat speciale letters goed worden getoond -->
+        <title>Compressie</title> <!-- Tekst in het tabblad -->
+        <link rel="stylesheet" type="text/css" href="opmaak.css"> <!-- Koppelt het opmaakbestand -->
     </head>
-      <body>
+    <body>
+
+        <!-- Bovenkant van de pagina: logo-tekst en menu (hetzelfde op elke pagina) -->
         <header class="site-header">
             <div class="logo">Mijn Informatica</div>
             <ul>
@@ -18,19 +20,22 @@
                         <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
                         <li><a href="compressie.html">Compressie</a></li>
                         <li><a href="ai.html">AI</a></li>
-                        <li><a href="IVU.html">IVU</a></li>
+                        <li><a href="ivu.html">IVU</a></li>
                     </ul>
                 </li>
             </ul>
         </header>
 
+        <!-- Grote titel van de pagina -->
         <h1 class="page-title">Compressie</h1>
 
+        <!-- Kaart 1: wat is compressie en het verschil lossless/lossy -->
         <div class="card">
             <h2>Wat is compressie?</h2>
             <p>Compressie betekent het kleiner maken van een bestand, zodat het minder opslagruimte inneemt. Bij compressie is er verschil tussen lossless (zonder kwaliteitsverlies) en lossy (met verlies, kleiner bestand).</p>
         </div>
 
+        <!-- Rij met twee kaarten naast elkaar: bitmap en vector -->
         <div class="card-row">
             <div class="card">
                 <h2>Bitmap</h2>
@@ -40,14 +45,17 @@
                 <h2>Vector</h2>
                 <p>Een vector wordt niet opgeslagen als pixels, maar als wiskundige formules voor vormen en lijnen. Daardoor kun je 'm eindeloos vergroten zonder kwaliteitsverlies, ideaal voor logo's.</p>
             </div>
-<img src="images/comprimatie.png" alt="compressie" style="width: 100%; border-radius: 16px; margin: 16px 0;" img/>
         </div>
-         <div class="card">
+
+        <!-- Kaart met de YouTube-video -->
+        <div class="card">
             <h2>Video</h2>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/guo8if4Yxhw" title="YouTube video" allowfullscreen></iframe>
+                <!-- Vervang PLAK-HIER-JE-VIDEO-ID door de ID van je filmpje -->
+                <iframe src="https://www.youtube.com/embed/PLAK-HIER-JE-VIDEO-ID" title="YouTube video" allowfullscreen></iframe>
             </div>
-            <p>Het begin is sowieso al heel goed, omdat het met iets begint waar jij jezelf in kan vinden vind ik persoonlijk heel goed. Voor de rest een goeie en duidelijke uitleg</p>
+            <p>Typ hier in 3 zinnen waarom je dit filmpje over compressie hebt gekozen.</p>
         </div>
+
     </body>
 </html>
