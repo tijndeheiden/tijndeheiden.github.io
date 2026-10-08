@@ -1,65 +1,81 @@
 
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--dit is het html-element--></html>
-<head>
-<title>Informatica A5</title>
-<link rel="stylesheet" type="text/css" href="CSS/opmaak.css">
-<meta charset=''utf-8''>'
-</head>
-<body>
- <header class="site-header">
-<div class="logo">Mijn Informatica</div>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li class="dropdown">
-<a href="binairstelsel.html">Informatica</a>
-<ul class="dropdown-menu">
-<li><a href="binairstelsel.html">Binair stelsel</a></li>
-<li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-<li><a href="compressie.html">Compressie</a></li>
-<li><a href="ai.html">AI</a></li>
-<li><a href="IVU.html">IVU</a></li>
-</ul>
-</li>
-</ul>
-</header>
+<!DOCTYPE html> <!-- Geeft aan dat dit een HTML5-document is -->
+<html lang="nl"> <!-- Begin van de pagina; de taal is Nederlands -->
+    <head>
+        <meta charset="utf-8"> <!-- Zorgt dat letters als è en ë goed worden getoond -->
+        <title>Home</title> <!-- Tekst die in het tabblad van de browser staat -->
+        <link rel="stylesheet" type="text/css" href="opmaak.css"> <!-- Koppelt het opmaakbestand -->
+    </head>
+    <body>
 
-<h1 class="page-title">Welkom</h1>
+        <!-- Bovenkant van de pagina: logo-tekst en menu -->
+        <header class="site-header">
+            <div class="logo">Mijn Informatica</div> <!-- Naam van de site links -->
 
-<div class="card">
-<h2>Over mij</h2>
-<p>Typ hier een stukje over jezelf, bijvoorbeeld wie je bent, wat je leuk vindt en waarom je deze website hebt gemaakt.</p>
-</div>
+            <!-- Het menu: een lijst met links -->
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link naar de homepage -->
 
-<div class="card-row">
-<div class="card">
-<h2>Sporten</h2>
-<div class="card-with-icon">
-<img src="images.jpg" alt="sjz logo">
-<div class="text">
-<p>Ik zit op voetbal bij SJZ in Zoeterwoude-Dorp. Hier speel ik met veel vrienden in de 17-1. Ik heb het heel erg naar mijn zin hier. Ik zit al heel mijn leven op voetbal en ook al die jaren al bij SJZ. Ik ben voor Feyenoord en ik ga ook geregeld naar wedstrijden.</p>
-</div>
-</div>
-</div>
-<div class="card">
-<h2>Gamen</h2>
-<div class="card-with-icon">
-<img src="images/PlayStation_logo.svg.webp" alt="PlayStation logo">
-<div class="text">
-<p>Ik game ook heel veel. Ik speel onder andere: EA FC, Fortnite, Rocket League, GTA en een hele enkele keer Apex Legends en Roblox. Ik game vooral op de playstation, maar ook een enkele keer op mijn telefoon.</p>
-</div>
-</div>
-</div>
-</div>
+                <!-- Menu-item met een dropdown eronder -->
+                <li class="dropdown">
+                    <a href="binairstelsel.html">Informatica</a>
+                    <!-- Het submenu dat verschijnt als je erover hovert -->
+                    <ul class="dropdown-menu">
+                        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+                        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+                        <li><a href="compressie.html">Compressie</a></li>
+                        <li><a href="ai.html">AI</a></li>
+                        <li><a href="ivu.html">IVU</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
 
-<div class="card">
-<h2>Video</h2>
-<div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/PEQYiGLWvC0" title="YouTube video" allowfullscreen></iframe>
-</div>
-<p>Ik ben voor feyenoord en dan is dit een geweldige wedstrijd en tegelijkertijd ook video om erop te zetten. Zeker omdat ik ook voetbal vond ik dit wel een goeie om erbij te zetten</p>
-</div>
+        <!-- Grote titel van de pagina -->
+        <h1 class="page-title">Welkom</h1>
 
-        
-</body>
+        <!-- Grote kaart bovenaan: over mij -->
+        <div class="card">
+            <h2>Over mij</h2>
+            <p>Typ hier een stukje over jezelf.</p>
+        </div>
+
+        <!-- Rij met twee kaarten naast elkaar: Sporten en Gamen -->
+        <div class="card-row">
+
+            <!-- Kaart 1: Sporten, met klein logo naast de tekst -->
+            <div class="card">
+                <h2>Sporten</h2>
+                <div class="card-with-icon">
+                    <img src="feyenoord-logo.png" alt="Feyenoord logo"> <!-- Het logo; bestandsnaam moet kloppen -->
+                    <div class="text">
+                        <p>Ik zit op voetbal bij SJZ in Zoeterwoude-Dorp. Hier speel ik met veel vrienden in de 17-1. Ik heb het heel erg naar mijn zin hier. Ik zit al heel mijn leven op voetbal en ook al die jaren al bij SJZ. Ik ben voor Feyenoord en ik ga ook geregeld naar wedstrijden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 2: Gamen, met klein logo naast de tekst -->
+            <div class="card">
+                <h2>Gamen</h2>
+                <div class="card-with-icon">
+                    <img src="playstation-logo.png" alt="PlayStation logo"> <!-- Het logo; bestandsnaam moet kloppen -->
+                    <div class="text">
+                        <p>Ik game ook heel veel. Ik speel onder andere: EA FC, Fortnite, Rocket League, GTA en een hele enkele keer Apex Legends en Roblox. Ik game vooral op de PlayStation, maar ook een enkele keer op mijn telefoon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Losse kaart over de hele breedte: de video -->
+        <div class="card">
+            <h2>Video</h2>
+            <!-- Vak met vaste verhouding waarin de YouTube-video staat -->
+            <div class="video-wrapper">
+                <!-- /embed/ zorgt dat alleen de videospeler wordt getoond; plak hier de video-ID -->
+                <iframe src="https://www.youtube.com/embed/PLAK-HIER-JE-VIDEO-ID" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <p>Typ hier in 3 zinnen waarom je dit filmpje hebt gekozen.</p>
+        </div>
+
+    </body>
 </html>
