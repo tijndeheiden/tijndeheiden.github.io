@@ -1,12 +1,14 @@
 
-<!DOCTYPE html> <!--dit is de IVU pagina van mijn site-->
-<html> <!--dit is het html-element-->
+<!DOCTYPE html> <!-- Geeft aan dat dit een HTML5-document is -->
+<html lang="nl"> <!-- Begin van de pagina; de taal is Nederlands -->
     <head>
-        <title>IVU</title>
-        <link rel="stylesheet" type="text/css" href="CSS/opmaak.css">
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- Zorgt dat speciale letters goed worden getoond -->
+        <title>IVU</title> <!-- Tekst in het tabblad -->
+        <link rel="stylesheet" type="text/css" href="opmaak.css"> <!-- Koppelt het opmaakbestand -->
     </head>
-     <body>
+    <body>
+
+        <!-- Bovenkant van de pagina: logo-tekst en menu (hetzelfde op elke pagina) -->
         <header class="site-header">
             <div class="logo">Mijn Informatica</div>
             <ul>
@@ -24,30 +26,36 @@
             </ul>
         </header>
 
+        <!-- Grote titel van de pagina -->
         <h1 class="page-title">IVU</h1>
 
+        <!-- Kaart 1: wat is het IVU-model -->
         <div class="card">
             <h2>Wat is het IVU-model?</h2>
             <p>Het IVU-model beschrijft hoe een computer(systeem) in grote lijnen werkt, in drie stappen: invoer, verwerking en uitvoer. Dit model geldt niet alleen voor hele computers, maar ook voor losse programma's en zelfs voor apparaten als een wasmachine of een thermostaat.</p>
         </div>
 
+        <!-- Rij met twee kaarten naast elkaar -->
         <div class="card-row">
             <div class="card">
-                <h2>Invoer &amp; verwerking</h2>
+                <h2>Invoer &amp; verwerking</h2> <!-- &amp; is de HTML-code voor het &-teken -->
                 <p>Bij invoer komen gegevens de computer binnen, bijvoorbeeld via een toetsenbord, muis, microfoon of sensor. Bij verwerking voert de processor (CPU) berekeningen uit of volgt instructies op basis van die gegevens.</p>
             </div>
             <div class="card">
                 <h2>Uitvoer</h2>
                 <p>Bij uitvoer komt het resultaat weer naar buiten, bijvoorbeeld op een beeldscherm, via een printer of een luidspreker. Voorbeeld: "4 + 5" intikken is invoer, de optelling is verwerking, en het getal 9 op het scherm is uitvoer.</p>
             </div>
-<img src="images/input-verwerking-output-27909279.webp" alt="invoer verwerking uitvoer" style="width: 100%; border-radius: 16px; margin: 16px 0;"> img/>
         </div>
-           <div class="card">
+
+        <!-- Kaart met de YouTube-video -->
+        <div class="card">
             <h2>Video</h2>
             <div class="video-wrapper">
+                <!-- Youtube video embedded -->
                 <iframe src="https://www.youtube.com/embed/CBf-jIn44X0" title="YouTube video" allowfullscreen></iframe>
             </div>
-            <p>Niet te lange, maar wel duidelijke uitleg. Vindt het goed dat bij elke een paar voorbeelden genoemd worden met plaatjes dat helpt mij heel erg. Over het algemeen gewoon een goede uitleg.</p>
+            <p>Typ hier in 3 zinnen waarom je dit filmpje over IVU hebt gekozen.</p>
         </div>
+
     </body>
 </html>
