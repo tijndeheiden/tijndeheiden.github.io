@@ -1,12 +1,14 @@
 
-<!DOCTYPE html> <!--dit is de kleurmodellen pagina van mijn site-->
-<html> <!--dit is het html-element-->
-<head>
-<title>Kleurmodellen</title>
-<link rel="stylesheet" type="text/css" href="CSS/opmaak.css">
-    <meta charset="utf-8">
+<!DOCTYPE html> <!-- Geeft aan dat dit een HTML5-document is -->
+<html lang="nl"> <!-- Begin van de pagina; de taal is Nederlands -->
+    <head>
+        <meta charset="utf-8"> <!-- Zorgt dat speciale letters goed worden getoond -->
+        <title>Kleurmodellen</title> <!-- Tekst in het tabblad -->
+        <link rel="stylesheet" type="text/css" href="opmaak.css"> <!-- Koppelt het opmaakbestand -->
     </head>
-     <body>
+    <body>
+
+        <!-- Bovenkant van de pagina: logo-tekst en menu (hetzelfde op elke pagina) -->
         <header class="site-header">
             <div class="logo">Mijn Informatica</div>
             <ul>
@@ -18,31 +20,36 @@
                         <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
                         <li><a href="compressie.html">Compressie</a></li>
                         <li><a href="ai.html">AI</a></li>
-                        <li><a href="IVU.html">IVU</a></li>
+                        <li><a href="ivu.html">IVU</a></li>
                     </ul>
                 </li>
             </ul>
         </header>
 
+        <!-- Grote titel van de pagina -->
         <h1 class="page-title">Kleurmodellen</h1>
 
+        <!-- Kaart 1: uitleg over het RGB-model (voor schermen) -->
         <div class="card">
             <h2>RGB</h2>
             <p>Een kleurmodel is een systeem waarmee je kleuren op een computerscherm kunt beschrijven en maken. Het meest gebruikte model voor schermen is RGB, wat staat voor Red, Green en Blue. Elke pixel bestaat uit drie piepkleine lampjes: rood, groen en blauw. Door de lichtsterkte van elk lampje aan te passen, kun je bijna elke kleur maken. Elke kleur kan een waarde hebben van 0 tot en met 255, dus in totaal meer dan 16 miljoen combinaties. Staan alle drie op 0, dan zie je zwart; staan ze alle drie op 255, dan zie je wit.</p>
         </div>
 
-        <img src="images/rgb-cmyk-edited.jpg__i=AA" alt="RGB model" style="width: 100%; border-radius: 16px; margin: 16px 0;" img/>
-
+        <!-- Kaart 2: uitleg over het CMYK-model (voor printers) -->
         <div class="card">
             <h2>CMYK</h2>
             <p>CMYK staat voor Cyan, Magenta, Yellow en Key (zwart) en wordt gebruikt bij printers, in plaats van RGB voor schermen. Het grote verschil: RGB telt licht op (van zwart naar wit), terwijl CMYK inkt aftrekt van wit papier (van wit naar zwart). De "K" (zwart) wordt apart toegevoegd, omdat het mengen van cyaan, magenta en geel nooit een echt diep zwart oplevert.</p>
         </div>
-          <div class="card">
+
+        <!-- Kaart met de YouTube-video -->
+        <div class="card">
             <h2>Video</h2>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/9hirYMZ7PQc" title="YouTube video" allowfullscreen></iframe>
+                <!-- Vervang PLAK-HIER-JE-VIDEO-ID door de ID van je filmpje -->
+                <iframe src="https://www.youtube.com/embed/PLAK-HIER-JE-VIDEO-ID" title="YouTube video" allowfullscreen></iframe>
             </div>
-            <p>Deze video is heel duidelijk uitgelegd. Door met plaatjes te werken met zijn stem eronder zorgt er ook voor dat je het sneller begrijpt. Over het algemeen heel goed uitgelegd en niet te snel gepraat</p>
+            <p>Typ hier in 3 zinnen waarom je dit filmpje over kleurmodellen hebt gekozen.</p>
         </div>
+
     </body>
 </html>
