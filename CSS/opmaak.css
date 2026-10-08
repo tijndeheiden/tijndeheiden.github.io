@@ -1,157 +1,197 @@
 
+/* ==========================================================
+   opmaak.css
+   Dit bestand bepaalt hoe ALLE pagina's van de website eruitzien.
+   Elke HTML-pagina koppelt dit bestand via een <link>-regel.
+   ========================================================== */
+
+
+/* ---------- Algemeen ---------- */
+
+/* De hele pagina: zwarte achtergrond, witte tekst, geen witte rand */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-  color: white;
+  margin: 0;                  /* haalt de standaard witte rand rond de pagina weg */
+  padding: 0;                 /* geen extra ruimte binnen de pagina */
+  background-color: #000000;  /* zwarte achtergrond */
+  color: white;               /* standaard tekstkleur is wit */
 }
 
+/* Afbeeldingen worden nooit breder dan hun vakje en behouden hun verhouding */
+img {
+  max-width: 100%;            /* nooit breder dan de ruimte die er is */
+  height: auto;               /* hoogte past zich aan zodat het plaatje niet uitrekt */
+}
+
+
+/* ---------- Menu ---------- */
+
+/* Alle lijsten (<ul>) zien eruit als een menubalk */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #1c1c1c;
+  list-style-type: none;      /* haalt de bolletjes weg */
+  margin: 0;                  /* geen marge */
+  padding: 0;                 /* geen padding */
+  background-color: #1c1c1c;  /* donkergrijze balk */
 }
 
+/* Clearfix: sluit de zwevende (float) menu-items netjes af.
+   Dit gebruiken we i.p.v. overflow:hidden, want dat zou het dropdownmenu afsnijden. */
 ul::after {
-  content: "";
+  content: "";                /* maakt een onzichtbaar element na de lijst */
   display: table;
-  clear: both;
+  clear: both;                /* zorgt dat de lijst de hoogte van de items krijgt */
 }
 
+/* Elk menu-item staat naast elkaar (links uitgelijnd) */
 li {
   float: left;
 }
 
+/* De links in het menu */
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: block;             /* hele vlak is klikbaar, niet alleen de tekst */
+  color: white;               /* witte tekst */
+  text-align: center;         /* tekst in het midden */
+  padding: 14px 16px;         /* 14px boven/onder, 16px links/rechts */
+  text-decoration: none;      /* haalt de onderstreping weg */
 }
 
-/* Kleur van de link verandert bij hoveren */
+/* Als je met de muis over een link gaat, wordt de achtergrond groen */
 li a:hover {
   background-color: #00a651;
 }
 
-.over-mij {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 16px;
-  margin-top: 10px;
-}
 
-.over-mij h2,
-.over-eafc h2 {
-  color: #00a651;
-  margin-top: 0;
-}
+/* ---------- Dropdownmenu ---------- */
 
+/* Het menu-item waar het submenu onder hoort; submenu positioneert zich hieraan */
 .dropdown {
   position: relative;
 }
 
+/* Het submenu: standaard verborgen en zwevend onder het hoofdmenu */
 .dropdown-menu {
-  display: none;
-  position: absolute;
+  display: none;              /* niet zichtbaar totdat je erover hovert */
+  position: absolute;         /* ligt over de pagina heen, schuift niets op */
   background-color: #1c1c1c;
 }
-  
 
+/* Zodra je over het menu-item hovert, wordt het submenu zichtbaar */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Items in het submenu staan onder elkaar in plaats van naast elkaar */
 .dropdown-menu li {
   float: none;
 }
+
+
+/* ---------- Header (bovenkant van elke pagina) ---------- */
+
+/* Balk bovenaan met logo-tekst links en het menu rechts */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;                    /* zet logo en menu naast elkaar */
+  align-items: center;              /* verticaal netjes in het midden */
+  justify-content: space-between;   /* logo links, menu rechts */
   background-color: #000000;
   padding: 16px 32px;
 }
 
+/* De tekst "Mijn Informatica" links in de header */
 .site-header .logo {
-  color: #00a651;
+  color: #00a651;             /* groen */
   font-weight: bold;
   font-size: 18px;
 }
 
+/* Het menu in de header krijgt geen eigen achtergrond (zwart van de header schijnt door) */
 .site-header ul {
   background-color: transparent;
 }
 
+
+/* ---------- Titels en kaarten ---------- */
+
+/* De grote titel bovenaan elke pagina */
 .page-title {
   color: #00a651;
   font-size: 36px;
-  padding: 24px 32px 0;
+  padding: 24px 32px 0;       /* ruimte boven en links/rechts, niets onder */
   margin: 0;
 }
 
+/* Een kaart: donkergrijs blok met afgeronde hoeken waarin de inhoud staat */
 .card {
   background-color: #1c1c1c;
   color: white;
-  border-radius: 12px;
-  padding: 24px;
-  margin: 16px 32px;
+  border-radius: 12px;        /* afgeronde hoeken */
+  padding: 24px;              /* ruimte binnen de kaart */
+  margin: 16px 32px;          /* ruimte om de kaart heen */
 }
 
+/* De kopjes binnen een kaart zijn groen */
 .card h2 {
   color: #00a651;
   margin-top: 0;
 }
 
+/* Een rij waarin twee kaarten naast elkaar staan */
 .card-row {
-  display: flex;
-  gap: 16px;
+  display: flex;              /* kaarten naast elkaar */
+  gap: 16px;                  /* ruimte tussen de kaarten */
   margin: 16px 32px;
 }
 
+/* Kaarten in een rij delen de breedte gelijk en hebben geen eigen marge meer */
 .card-row .card {
   flex: 1;
   margin: 0;
 }
 
+
+/* ---------- Kleine afbeelding naast tekst ---------- */
+
+/* Zet een klein logo links en de tekst rechts ernaast */
+.card-with-icon {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;    /* alles bovenaan uitlijnen */
+}
+
+/* Het kleine logo: vast formaat van 70 bij 70 pixels */
+.card-with-icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;        /* hele logo blijft zichtbaar, niet uitgerekt */
+  flex-shrink: 0;             /* logo wordt niet kleiner geduwd door de tekst */
+  border-radius: 8px;
+  background-color: white;    /* wit vlak, zodat donkere logo's leesbaar zijn */
+  padding: 4px;
+}
+
+/* De tekst naast het logo gebruikt de rest van de ruimte */
+.card-with-icon .text {
+  flex: 1;
+}
+
+
+/* ---------- YouTube-video ---------- */
+
+/* Vak met een vaste 16:9-verhouding waarin de video netjes past */
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%;     /* 16:9 verhouding (9 gedeeld door 16) */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
 }
 
+/* De video zelf vult het hele vak */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.card-with-icon {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-.card-with-icon img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background-color: white;
-  padding: 4px;
-}
-
-.card-with-icon .text {
-  flex: 1;
+  border: 0;                  /* geen rand rond de video */
 }
